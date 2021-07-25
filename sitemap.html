@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SITEMAP</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body bgcolor="#f2f2f2">
+
+<center><h2>SITEMAP</h2></center>
+
+<ul id="myUL">
+  <li><span class="caret"><a href="index.html"><button class="button5">HOMEPAGE</BUTTON></span>
+    <ul class="nested">
+      <li><span style="color:black;><a href="game.html">GAME</li>
+      <li><span class="caret"><a href="search.html"><button class="button4">SEARCH</BUTTON></span>
+       <li><span class="caret"><a href="aboutpublichealth.html"><button class="button4">ABOUT PUBLIC HEALTH</BUTTON></span>
+       <li><span class="caret"><a href="articlecollection.html"><button class="button4">ARTICLE COLLECTION</BUTTON></span>
+       <li><span style="color:black;><a href="mentalhealtharticle.html">Mental Health</li>
+       <li><span style="color:black;><a href="obesityarticle.html">Obesity</li>
+       <li><span style="color:black;><a href="lunghealtharticle.html">Lung Health</li>
+       <li><span style="color:black;><a href="vaccinationarticle.html">Vaccination</li>
+       <li><span style="color:black;><a href="eyeshealtharticle.html">Eyes Health</li>
+       <li><span style="color:black;><a href="cardiovasculararticle.html">Cardio Health</li>
+       <li><span class="caret"><a href="healthtopic.html"><button class="button4">HEALTH TOPIC</BUTTON></span>
+        <li><span class="caret"><a href="contactus.html"><button class="button4">CONTACT US</BUTTON></span>
+        <li><span class="caret"><a href="faq.html"><button class="button4">FAQ</BUTTON></span>
+        <li><span class="caret"><a href="aboutme.html"><button class="button4">ABOUT ME</BUTTON></span>
+            </ul>
+          </li>
+        </ul>
+      </li>  
+    </ul>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+</head>
+</body>
+</html>
